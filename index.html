@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashutosh Chaturvedi | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // will first fade out the loading animation 
+      $("#loaderanimate").delay(3500).fadeOut("slow", function () {
+        // will fade out the whole DIV that covers the website.
+        $("#loader").fadeOut("slow");
+      });
+    });
+  </script>
+  <style>
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #ecf4ff;
+      z-index: 9999999;
+    }
+
+    .no-js #loaderanimate,
+    .oldie #loaderanimate {
+      display: none;
+    }
+
+    #loaderanimate {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 60px;
+      height: 60px;
+      /*margin-left: -90px;
+            margin-top: -150px;
+            padding: 0;*/
+    }
+
+    .loading {
+      position: absolute;
+      /*top: 50%;
+                left: 50%;*/
+      overflow: hidden;
+      transform: translate(-50%, 50%);
+      font-weight: 800;
+      font-family: Cinzel Decorative;
+    }
+
+    .loading::before {
+      color: #aaa;
+      content: attr(data-loading-text);
+    }
+
+    .loading::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      opacity: 1;
+      color: #444;
+      overflow: hidden;
+      content: attr(data-loading-text);
+      animation: loading 4s infinite;
+    }
+
+    @keyframes loading {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+   <a id="button"></a>
+
+  <div class="container-fluid">
+    <div id="loader">
+      <div id="loaderanimate">
+        <div class="loading" data-loading-text="Ashutosh_Chaturvedi"></div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  <!-- ===== HEADER ===== -->
+<header class="header">
+  <nav class="navbar">
+    <div class="logo">Ashutosh</div>
+    
+
+    <!-- Toggle Button -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Menu -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="contact.html" class="btn">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Ashutosh Chaturvedi</span></h1>
+      <p class="subtitle">Frontend Developer • Web Designer • Graphic Designer</p>
+
+    </div>
+
+    <div class="hero-img">
+      <img src="WhatsApp Image 2025-11-07 at 4.39.20 PM (1).jpeg" alt="Ashutosh">
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container-about">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate web developer focused on creating clean, user-friendly, and visually appealing websites.
+        I love transforming ideas into digital experiences using modern web technologies and thoughtful design.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills-section">
+    <h2 class="section-title">My Skills</h2>
+    <p class="section-subtitle">Technologies I work with</p>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <img src="HTML.png" alt="HTML Logo">
+            <h3>HTML</h3>
+        </div>
+
+        <div class="skill-card">
+            <img src="CSS.png" alt="CSS Logo">
+            <h3>CSS</h3>
+        </div>
+
+        <div class="skill-card">
+            <img src="JS.png" alt="JavaScript Logo">
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="skill-card">
+            <img src="pngwing.com.png" alt="Bootstrap Logo">
+            <h3>Bootstrap</h3>
+        </div>
+    </div>
+</section>
+
+  <!-- ===== PROJECTS ===== -->
+    <section class="projects" id="projects">
+  <h2 class="section-title">My Projects</h2>
+
+  <div class="project-container">
+
+    <div class="project-card">
+      <img src="Untitled-1.png" alt="Project 1">
+      <div class="project-content">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio website using HTML & CSS with responsive layout.</p>
+        <div class="project-links">
+          <a href="#">Live Demo</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="favicon.png" alt="Project 2">
+      <div class="project-content">
+        <h3>GamGear Website</h3>
+        <p>Gaming products website UI design with modern dark theme.</p>
+        <div class="project-links">
+          <a href="#">Live Demo</a>
+
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+  <!-- ===== CONTACT ===== -->
+
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out anytime.</p>
+
+    <div class="contact-wrapper">
+
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p><a href="mailto:auglydesigner06@gmail.com">auglydesigner06@gmail.com</a></p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Phone</h3>
+        <p><a href="tel:+919670805426">+91 9670805426</a></p>
+      </div>
+
+      <div class="contact-card">
+        <h3>WhatsApp</h3>
+        <p><a href="https://wa.me/9670805426">Whatsapp</a></p>
+      </div>
+
+
+    </div>
+  </section>
+  <div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1258.5027958991661!2d81.01618424915473!3d26.853198331973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2ef71b5d399%3A0x43908c08626afa20!2s1%2F144%2C%20Virat%20Khand%20-1%2C%20Gomti%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh%20226010!5e0!3m2!1sen!2sin!4v1765455911139!5m2!1sen!2sin"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <script src="main.js"></script>
+
+  <!--e ===== FOOTER ===== -->
+  <center>
+  
+  <section class="contact-area" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="contact-content text-center">
+                        <a href="#"><img src="Untitled-1.png" alt="logo"></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum </p>
+                        <div class="hr"></div>
+                       <p class="number">Phone:-<a href="tel:+919670805426">+91 9670805426</a></p>
+                        <div class="contact-social">
+                            <ul>
+                                <li><a class="hover-target" href="https://www.facebook.com/ashu.baba.988711"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="hover-target" href="https://www.linkedin.com/in/ashutosh-chaturvedi-a56a29370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a class="hover-target" href="https://www.instagram.com/auglydesigner?igsh=MTdmOTZ6ajNtdnF3aw=="><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="hover-target" href=""><i class="fab fa-behance"></i></a></li>
+                                <li><a class="hover-target" href="https://pin.it/4fWRGSMrz"><i class="fab fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============== 1.9 Contact Area End ====================-->
+    <!-- =============== 1.9 Footer Area Start ====================-->
+   <footer>
+    <div class="container footer">
+      <p>©2025 Made With ❤️ By Ashutosh Chaturvedi | All Rights Reserved</p>
+      <div>
+  </footer>
+  </center>
+</body>
+
+</html>
